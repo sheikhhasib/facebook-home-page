@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>facebook clone</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+        <script src="index.js"></script>
+</head>
+<body>
+<!-- header section  -->
+<div class="row header">
+  <div class="col-3 col-s-12 menu">
+    <div class="flex-container">
+        <img src="facebook.png" width="50px" alt="">
+        <input type="text" id="search" class="search-input" placeholder="search facebook">
+    </div>
+  </div>
+
+  <div class="col-6 col-s-12">
+    <div class="nav-middle-area">
+        <div class="flex-container">
+            <button id="header-home" class="header-button"><i class="fas fa-home"></i></button>
+            <button id="header-circle" class="header-button"><i class="fas fa-play-circle"></i></button>
+            <button id="header-hotel" class="header-button"><i class="fas fa-hotel"></i></button>
+            <button id="header-users" class="header-button"><i class="fas fa-users"></i></button>
+            <button id="header-dice" class="header-button"><i class="fas fa-dice-d6"></i></button>
+        </div>
+    </div>
+  </div>
+
+  <div class="col-3 col-s-12">
+    <div class="right-header">
+        <button class="right-header-button-picture">
+            <div class="name-picture">
+                <img class="profile-picture" src="https://i.pinimg.com/564x/38/1b/06/381b0623eda223138f89bf2c4b312076.jpg" width="35px" height="35px" alt="">
+                <p style="margin-top: 8px;padding: 0 5px;">Masum</p>
+            </div>
+        </button>
+        <div class="right-header">
+            <button class="right-header-button" style="padding: 10px 18px;"><i class="fas fa-ellipsis-v"></i></button>
+            <button onclick="mgsFunc()" id="mgsButton" class="right-header-button" style="padding: 10px 12px;"><i class="fab fa-facebook-messenger"></i></button>
+            <button class="right-header-button" style="padding: 10px 13px;"><i class="fas fa-bell"></i></button>
+            <button class="right-header-button" style="padding: 10px 16px;"><i class="fas fa-caret-down"></i></button>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- header section finish -->
+<!-- body section start  -->
+<div class="row main">
+  <div class="col-3 col-s-12 main-body-left">
+    <div class="facebook-info" >
+        <div class="left-info">
+            <img class="profile-picture" src="https://i.pinimg.com/564x/38/1b/06/381b0623eda223138f89bf2c4b312076.jpg" width="35px" height="35px" alt="">
+            <p class="mt-1 px-1">Masum Ahmed</p>
+        </div>
+        <div class="left-info">
+            <img class="profile-picture" src="https://static.xx.fbcdn.net/rsrc.php/v3/yx/r/5rR6LRpNc5u.png" width="35px" height="35px" alt="">
+            <p class="mt-1 px-1" >COVID-19 information Center</p>
+        </div>
+        <div class="left-info">
+            <img class="profile-picture" src="https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/S0U5ECzYUSu.png" width="35px" height="35px" alt="">
+            <p class="mt-1 px-1" >Friends</p>
+        </div>
+        <div class="left-info">
+            <img class="profile-picture" src="https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/duk32h44Y31.png" width="35px" height="35px" alt="">
+            <p class="mt-1 px-1" >Watch</p>
+        </div>
+        <div class="left-info">
+            <img class="profile-picture" src="https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/PrjLkDYpYbH.png" width="35px" height="35px" alt="">
+            <p class="mt-1 px-1" >Groups</p>
+        </div>
+        <div class="left-info">
+            <img class="profile-picture" src="https://static.xx.fbcdn.net/rsrc.php/v3/yH/r/kyCAf2jbZvF.png" width="35px" height="35px" alt="">
+            <p class="mt-1 px-1" >Pages</p>
+        </div>
+        <div class="left-info">
+            <img class="profile-picture" src="https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/DHBHg9MEeSC.png" width="35px" height="35px" alt="">
+            <p class="mt-1 px-1" >Ads</p>
+        </div>
+        <div class="left-info">
+            <img class="profile-picture" src="https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/p1ZJABzCAAS.png" width="35px" height="35px" alt="">
+            <p class="mt-1 px-1" >Blood Donations</p>
+        </div>
+        <span id="dots"></span>
+        <span id="more" style="display: none;">
+            
+            <div class="left-info">
+                <img class="profile-picture" src="https://static.xx.fbcdn.net/rsrc.php/v3/yT/r/cT5nPnO8Wsc.png" width="35px" height="35px" alt="">
+                <p class="mt-1 px-1" >Crisis Response</p>
+            </div>
+            <div class="left-info">
+                <img class="profile-picture" src="https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/vxMUnHhu6Do.png" width="35px" height="35px" alt="">
+                <p class="mt-1 px-1" >Emotional Health</p>
+            </div>
+            <div class="left-info">
+                <img class="profile-picture" src="https://static.xx.fbcdn.net/rsrc.php/v3/ys/r/8wTx0Eu2vRq.png" width="35px" height="35px" alt="">
+                <p class="mt-1 px-1" >Events</p>
+            </div>
+            <div class="left-info">
+                <img class="profile-picture" src="https://static.xx.fbcdn.net/rsrc.php/v3/yv/r/GJ4EaivDaSj.png" width="35px" height="35px" alt="">
+                <p class="mt-1 px-1" >Facebook Pay</p>
+            </div>
+            <div class="left-info">
+                <img class="profile-picture" src="https://static.xx.fbcdn.net/rsrc.php/v3/yK/r/mAnT0r8GSOm.png" width="35px" height="35px" alt="">
+                <p class="mt-1 px-1" >Favourites</p>
+            </div>
+            <div class="left-info">
+                <img class="profile-picture" src="https://static.xx.fbcdn.net/rsrc.php/v3/yQ/r/MN5ZSGIfEZ3.png" width="35px" height="35px" alt="">
+                <p class="mt-1 px-1" >Friend lists</p>
+            </div>
+        </span>
+        <div onclick="seeMoreFunc()" id="seeBtn" >
+            <span class="see-more-icon" style="padding: 8px 10px;">
+            <i class="fas fa-chevron-down "></i></span>
+            See more
+        </div>
+        <!-- <div class="footer">
+            <p>Privacy  · Terms  · Advertising  · Ad choices   · Cookies  ·</p>
+            <span>More · Facebook © 2021</span>
+        </div> -->
+        
+    </div>
+  </div>
+
+  <div class="col-12 col-s-12">
+    <div class="main-post-top">
+        <div class="main-post">
+            <div class="card live-card">
+                <div class="flex-container" >
+                    <img class="profile-picture" src="https://i.pinimg.com/564x/38/1b/06/381b0623eda223138f89bf2c4b312076.jpg" width="35px" height="35px" alt="">
+                    <button class="what-your-mind-btn">What's on Your mind, Masum? </button>
+                </div>
+                <div style="border-top: 1px solid #484b4e; margin-top: 10px;"></div>
+                <div class="flex-container">
+                    <button class="post-button"><i style="color: #a80823;" class="fad fa-video-plus"></i> <span class="live-video-text">Live video</span></button>
+                    <button class="post-button"><i style="color: #45bd62;" class="fas fa-photo-video"></i> <span class="live-video-text">Photo/Video</span></button>
+                    <button class="post-button"><i style="color: #f7b92b;" class="fas fa-laugh"></i> <span class="live-video-text">Activity</span></button>
+                </div>
+            </div>
+            <div class="mt-2">
+                <div class="card post-card">
+                    <div class="flex-container "  style="justify-content: space-between;">
+                        <div class="flex-container">
+                             <img class="profile-picture" src="https://i.pinimg.com/564x/38/1b/06/381b0623eda223138f89bf2c4b312076.jpg" width="45px" height="45px" alt="">
+                             <p class="mx-1">Siam Ahmed <span style="color: #7f8081;"> is <i style="color: #f7b92b;" class="far fa-grin-alt"></i> feeling happy at Mouban 81.N.S Road Dhaka</span></p>
+                        </div>
+                         <button class="right-header-button" style="padding: 10px 18px;"><i class="fas fa-ellipsis-v"></i></button>
+                     </div>
+                    <div style="margin-top: -25px;margin-left: 55px;">
+                        <pre>2d  · Dhaka  · </pre>
+                    </div>
+                    <div class="my-2">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum quas vel voluptatem nam placeat. Facere mollitia earum aut quidem at?</p>
+                    </div>
+                    <div >
+                        <img width="100%" src="https://anotherimg-dazedgroup.netdna-ssl.com/2000/azure/another-prod/400/0/400386.jpg" alt="">
+                    </div>
+                    <div class="flex-container my-1" style="justify-content:space-between;">
+                        <p >
+                            <span  style="color: #6c63ff;"><i class="fas fa-thumbs-up"></i></span>
+                            <span  style="color: #ec253e;"><i class="fas fa-heart"></i></span>
+                            255
+                        </p>
+                        <p >
+                            <span>25 comments</span>
+                            <span>7 shares</span>
+                        </p>
+                    </div>
+                    <div class="under-line"></div>
+                    <div >
+                        <button class="post-button"><span  style="color: #6c63ff;"><i class="fas fa-thumbs-up"></i></span> Like</button>
+                        <button class="post-button"><i class="fas fa-comment-alt"></i> Comments</button>
+                        <button class="post-button"><i class="fas fa-share"></i> Share</button>
+                    </div>
+                    <div class="under-line"></div>
+                
+                </div>
+            </div>
+            <div class="mt-2">
+                <div class="card post-card">
+                    <div class="flex-container "  style="justify-content: space-between;">
+                       <div class="flex-container">
+                            <img class="profile-picture" src="https://i.pinimg.com/564x/38/1b/06/381b0623eda223138f89bf2c4b312076.jpg" width="45px" height="45px" alt="">
+                            <p class="mx-1">Siam Ahmed <span style="color: #7f8081;"> is <i style="color: #f7b92b;" class="far fa-grin-alt"></i> feeling happy at Mouban 81.N.S Road Dhaka</span></p>
+                       </div>
+                        <button class="right-header-button" style="padding: 10px 18px;"><i class="fas fa-ellipsis-v"></i></button>
+                    </div>
+                    <div>
+                        <pre>2d  · Dhaka  · </pre>
+                    </div>
+                    <div class="my-2">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit at repellendus saepe amet, expedita officiis?</p>
+                    </div>
+                    <div >
+                        <img width="100%" src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c8baa20-aa40-11ea-8500-5aff29860cf1.jpg?crop=1000%2C1500%2C0%2C0" alt="">
+                    </div>
+                    <div class="flex-container my-1" style="justify-content:space-between;">
+                        <p >
+                            <span  style="color: #6c63ff;"><i class="fas fa-thumbs-up"></i></span>
+                            <span  style="color: #ec253e;"><i class="fas fa-heart"></i></span>
+                            255
+                        </p>
+                        <p >
+                            <span>25 comments</span>
+                            <span>7 shares</span>
+                        </p>
+                    </div>
+                    <div class="under-line"></div>
+                    <div >
+                        <button class="post-button"><span  style="color: #6c63ff;"><i class="fas fa-thumbs-up"></i></span> Like</button>
+                        <button class="post-button"><i class="fas fa-comment-alt"></i> Comments</button>
+                        <button class="post-button"><i class="fas fa-share"></i> Share</button>
+                    </div>
+                    <div class="under-line"></div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="col-3 col-s-12">
+    <div class="contact-info">
+        <div class="">
+            <p>Contacts</p>
+            
+            <div style="float: right; margin-top: -30px;">
+                <button class="right-header-button" style="padding: 10px 20px;"><i class="fas fa-ellipsis-v"></i></button>
+            </div>
+            <div style="float: right; margin-top: -30px;">
+                <button class="right-header-button" style="padding: 10px 13px;"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+        <div class="right-info">
+            <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.18169-9/21766804_749418048579002_17778767257630667_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=LMb735TGs_wAX-WA0RZ&_nc_ht=scontent.fdac46-1.fna&oh=94d632290a53a6f310e599d40b4bf72d&oe=60D9DEAE" width="35px" height="35px" alt="">
+            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <p class="mt-1 px-1">Masum Ahmed</p>
+        </div>
+        <div class="right-info">
+            <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-9/186513629_323748049340037_4810255394755612719_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=l10aLU-do6YAX8w-Wh_&_nc_ht=scontent.fdac46-1.fna&oh=b09b935e33f90d36b5dc4abedc645612&oe=60D95E54" width="35px" height="35px" alt="">
+            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <p class="mt-1 px-1">Sheikh Siam</p>
+        </div>
+        <div class="right-info">
+            <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-9/147677436_2948196705460046_3047728649810408228_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=z6oTFEMXhyoAX_DQ_fQ&_nc_oc=AQldtJDPnC1iE_CCFkuZbFOEqXF4Rxhc2I3Jn8RwIm6qsBD4k8Reg8_vZWoqxuVFLXo&_nc_ht=scontent.fdac46-1.fna&oh=3e716d9de7cfc0b74daac6dc2114a50f&oe=60DAD9EC" width="35px" height="35px" alt="">
+            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <p class="mt-1 px-1">Ariful Islam Saikat</p>
+        </div>
+        <div class="right-info">
+            <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-9/171799158_2842104069376582_6850032030931742572_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=-umehi23HmgAX8mK055&_nc_ht=scontent.fdac46-1.fna&oh=9ce83569dbb8a6c256833ed53e2b5784&oe=60D8D351" width="35px" height="35px" alt="">
+            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <p class="mt-1 px-1">Yasir Arafat</p>
+        </div>
+        <div class="right-info">
+            <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-9/152530762_2941701469392271_497510487180784684_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=7GNro06F9WYAX_SRpex&tn=wIbXFXIURWv18-gm&_nc_ht=scontent.fdac46-1.fna&oh=c4a70a6978a6cad2fa76d01e4ed9f2c1&oe=60D83DAC" width="35px" height="35px" alt="">
+            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <p class="mt-1 px-1">Tushar Ahmed</p>
+        </div>
+        <div class="right-info">
+            <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-9/141739504_237683631142900_1373843070330832032_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=4zjzzC9R3UcAX9fgP1r&_nc_oc=AQnVC_29Q0zHABhzxGAqVWpRc_Em1Q6oYFadXHdpnjPhu5HRt1DQX6zYFYjc9CH0-Co&_nc_ht=scontent.fdac46-1.fna&oh=a4aab8578adb5fba58dac7beae744f47&oe=60DAFCAB" width="35px" height="35px" alt="">
+            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <p class="mt-1 px-1">Mohammad Sowrav</p>
+        </div>
+        <div class="right-info">
+            <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-9/185585701_950557892422415_3491587408942910043_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=hGG8cHof4SEAX-qygg9&tn=wIbXFXIURWv18-gm&_nc_ht=scontent.fdac46-1.fna&oh=fe380579f6eee13df4f45f025297a4d5&oe=60DAE2DD" width="35px" height="35px" alt="">
+            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <p class="mt-1 px-1">Asraful Khan</p>
+        </div>
+        <div class="right-info">
+            <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-9/78356053_105266024285740_5890067344566255616_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=CEDoliLnRTcAX-cS95Z&_nc_ht=scontent.fdac46-1.fna&oh=e186c9e6ad595c0abbe8dc3b4ebe4b2f&oe=60D7B209" width="35px" height="35px" alt="">
+            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <p class="mt-1 px-1">Sheikh Saiful</p>
+        </div>
+        <div class="right-info">
+            <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-0/s526x395/186518945_499084621235769_8329867229390600014_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=N3X1HO0ZJhsAX9yelal&_nc_ht=scontent.fdac46-1.fna&tp=7&oh=3a328ebe9f4205112247c5ca85f380cf&oe=60D837DC" width="35px" height="35px" alt="">
+            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <p class="mt-1 px-1">Rakibul Islam Rakib</p>
+        </div>
+        <div class="right-info">
+            <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-9/186452075_4346470735404799_1916745049264941360_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=Zkz9dA06c_cAX8Wwtze&_nc_ht=scontent.fdac46-1.fna&oh=ab9a08c840ec1241b43009f8322797ef&oe=60D953B9" width="35px" height="35px" alt="">
+            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <p class="mt-1 px-1">Md Al Amin Bhuiyan</p>
+        </div>
+        <div class="right-info">
+            <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-9/117313331_2749393925319103_6865770388311760725_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=aeneptxkh1sAX9MdCl1&_nc_ht=scontent.fdac46-1.fna&oh=5310308b1cfc1f1ab5a53a78d622f3f2&oe=60DB0F50" width="35px" height="35px" alt="">
+            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <p class="mt-1 px-1">Md Shohedul Islam Emon</p>
+        </div>
+        <div class="right-info">
+            <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-9/185293718_1217577755365807_1050572696291202034_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=m6xxnlfs-IAAX9cGayK&_nc_ht=scontent.fdac46-1.fna&oh=f4ea566d774a03b2cc4789f55461e036&oe=60D915FB" width="35px" height="35px" alt="">
+            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <p class="mt-1 px-1">Abdus Sami Salim</p>
+        </div>
+        <div class="right-info">
+            <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-9/156543290_2870771166502150_2417008649967731189_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=6w4yG8XVdZ0AX9h1ev-&_nc_ht=scontent.fdac46-1.fna&oh=0748f0d40d5fe41c66b6ec9b58f57bb0&oe=60DB172F" width="35px" height="35px" alt="">
+            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <p class="mt-1 px-1">Snigdha Afrin</p>
+        </div>
+        <div class="right-info">
+            <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-9/119984766_3442223072466022_2204726986236711641_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=OtN1RSwl0JkAX_9Pqp3&_nc_ht=scontent.fdac46-1.fna&oh=36e47319fc235934a854776323eae6cd&oe=60DB1B57" width="35px" height="35px" alt="">
+            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <p class="mt-1 px-1">Ismail Hossain</p>
+        </div>
+        <div class="right-info">
+            <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-9/188486962_793184484735552_6784692470492804313_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=sTaRL7JxwZgAX_vgGjN&_nc_ht=scontent.fdac46-1.fna&oh=bf0f96fb4cbcc32cd196c864207f345e&oe=60D7BE89" width="35px" height="35px" alt="">
+            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <p class="mt-1 px-1">S. A. Logno</p>
+        </div>
+        <div class="right-info">
+            <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-9/123138590_116927586860631_5514202733644109710_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=3mgRBohN8LYAX-lA1qC&_nc_ht=scontent.fdac46-1.fna&oh=8b04fe0d6f89e1bc2f03151c2dac2461&oe=60D82B80" width="35px" height="35px" alt="">
+            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <p class="mt-1 px-1">Samadul SK</p>
+        </div>
+        <div class="right-info">
+            <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-9/186558555_1458000724535582_3953511272321739003_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=YqGXVo2kOAsAX9LBzX0&_nc_ht=scontent.fdac46-1.fna&oh=6e2fd525e90e42e6105b18b9efca468a&oe=60DB0EB9" width="35px" height="35px" alt="">
+            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <p class="mt-1 px-1">Md. Ruhul Amin</p>
+        </div>
+        <div class="right-info">
+            <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-9/165381623_288198576025390_3184616926629784638_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=4pH_stE5irIAX8Cm7Df&tn=wIbXFXIURWv18-gm&_nc_ht=scontent.fdac46-1.fna&oh=deb8629eb26d740e5456ef3586f00ff4&oe=60D900C4" width="35px" height="35px" alt="">
+            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <p class="mt-1 px-1">Habib Rahaman</p>
+        </div>
+        <div class="right-info">
+            <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-9/91762291_879033345851876_6540076259307683840_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=2LI08cyUYSUAX9kSKmK&_nc_ht=scontent.fdac46-1.fna&oh=016fb585eac17558fcb6372bd2e2f3db&oe=60D92FC7" width="35px" height="35px" alt="">
+            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <p class="mt-1 px-1">Masum Ali</p>
+        </div>
+    </div>
+     <!-- messenger card start  -->
+     <div class="messenger" id="messenger">
+        <div class="flex-container" style="padding: 5px 10px;justify-content:space-between;">
+            <div class="name-picture">
+                <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-0/s526x395/185293718_1217577755365807_1050572696291202034_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=m6xxnlfs-IAAX9cGayK&_nc_ht=scontent.fdac46-1.fna&tp=7&oh=80cb6b0f3e96bf43d2730aeb2967a115&oe=60D87CEA" width="35px" height="35px" alt="">
+                <p style="margin-top: 8px;padding: 0 5px;">Salim Ahmed <i class="fas fa-chevron-down"></i></p>
+            </div>
+            <div class="msg-icon mt-1" >
+                <span><i class="fas fa-video"></i></span>
+                <span><i class="fas fa-phone-alt"></i></span>
+                <span><i class="far fa-window-minimize"></i></span>
+                <span onclick="mgsFunc()" style="cursor: pointer;"><i class="fas fa-times"></i></span>
+            </div>
+        </div>
+        <div style="border-top: 1px solid rgb(82, 82, 82);"></div>
+        <div class="mgs-body">
+            <div class="msg">
+                <div class="name-picture">
+                    <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-0/s526x395/185293718_1217577755365807_1050572696291202034_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=m6xxnlfs-IAAX9cGayK&_nc_ht=scontent.fdac46-1.fna&tp=7&oh=80cb6b0f3e96bf43d2730aeb2967a115&oe=60D87CEA" width="35px" height="35px" alt="">
+                    <p class="your-mgs">Lorem ipsum dolor sit amet. </i></p>
+                </div>
+                <div class="my-mgs" style="float: right;">
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="my-mgs" style="float: right;">
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="my-mgs" style="float: right;">
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="my-mgs" style="float: right;">
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="my-mgs" style="float: right;">
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="my-mgs" style="float: right;">
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="my-mgs" style="float: right;">
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="my-mgs" style="float: right;">
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+            <div class="create-msg">
+                <span><i class="fas fa-plus-circle"></i></span>
+                <span><i class="fas fa-images"></i></span>
+                <span><i class="far fa-laugh-wink"></i></span>
+                <span><i class="fas fa-gift"></i></span>
+                <input type="text" placeholder="Aa">
+                <span><i class="fas fa-thumbs-up"></i></span>
+            </div>
+        </div>
+    </div>
+    <!-- messenger card finish  -->
+  </div>
+</div>
+
+
+</body>
+</html>
