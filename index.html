@@ -13,10 +13,14 @@
 <!-- header section  -->
 <div class="row header">
   <div class="col-3 col-s-12 menu">
-    <div class="flex-container">
-        <img src="facebook.png" width="50px" alt="">
-        <input type="text" id="search" class="search-input" placeholder="search facebook">
-        <button onclick="facebookInfoFunc()" id="infoButton" class="navbar-btn"><i class="fas fa-bars"></i></button>
+    <div class="flex-container" style="justify-content: space-between;">
+        <div class="flex-container">
+            <img src="facebook.png" width="50px" alt="">
+            <input type="text" id="search" class="search-input" placeholder="search facebook">
+        </div>
+        <div>
+            <button onclick="facebookInfoFunc()" id="infoButton" class="navbar-btn"><i class="fas fa-bars"></i></button>
+        </div>
     </div>
   </div>
 
@@ -199,11 +203,23 @@
                     <div class="under-line"></div>
                     <div class="flex-container">
                         <button class="post-button"><span  style="color: #6c63ff;"><i class="fas fa-thumbs-up"></i></span> Like</button>
-                        <button class="post-button"><i class="fas fa-comment-alt"></i> Comments</button>
+                        <button class="post-button" onclick="commentFunc()" id="commentBtn"><i class="fas fa-comment-alt"></i> Comments</button>
                         <button class="post-button"><i class="fas fa-share"></i> Share</button>
                     </div>
                     <div class="under-line"></div>
-                
+                    <div class="comment-section" id="commentSection">
+                        <div class="flex-container my-1">
+                            <img class="profile-picture" src="https://i.pinimg.com/564x/38/1b/06/381b0623eda223138f89bf2c4b312076.jpg" width="35px" height="35px" alt="">
+                            <input class="mx-1" type="text">
+                        </div>
+                        <div class="flex-container">
+                            <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-9/185293718_1217577755365807_1050572696291202034_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=KIF60mzfgrkAX-_wqa-&_nc_ht=scontent.fdac46-1.fna&oh=e9cec2b7d87d9d60d7a88012e9c096f8&oe=60DD0A7B" width="35px" height="35px" alt="">
+                            <div class="comment-text">
+                               <p class="mx-1">Salim </p>
+                               <p class="post-location">Lorem ipsum dolor sit amet.</p>
+                            </div>
+                       </div>
+                    </div>
                 </div>
             </div>
             <div class="mt-2">
@@ -240,11 +256,23 @@
                     <div class="under-line"></div>
                     <div class="flex-container">
                         <button class="post-button"><span  style="color: #6c63ff;"><i class="fas fa-thumbs-up"></i></span> Like</button>
-                        <button class="post-button"><i class="fas fa-comment-alt"></i> Comments</button>
+                        <button class="post-button" onclick="commentFunc()" id="commentBtn"><i class="fas fa-comment-alt"></i> Comments</button>
                         <button class="post-button"><i class="fas fa-share"></i> Share</button>
                     </div>
                     <div class="under-line"></div>
-                
+                    <div class="comment-section" id="commentSection">
+                        <div class="flex-container my-1">
+                            <img class="profile-picture" src="https://i.pinimg.com/564x/38/1b/06/381b0623eda223138f89bf2c4b312076.jpg" width="35px" height="35px" alt="">
+                            <input class="mx-1" type="text">
+                        </div>
+                        <div class="flex-container">
+                            <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-9/185293718_1217577755365807_1050572696291202034_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=KIF60mzfgrkAX-_wqa-&_nc_ht=scontent.fdac46-1.fna&oh=e9cec2b7d87d9d60d7a88012e9c096f8&oe=60DD0A7B" width="35px" height="35px" alt="">
+                            <div class="comment-text">
+                               <p class="mx-1">Salim </p>
+                               <p class="post-location">Lorem ipsum dolor sit amet.</p>
+                            </div>
+                       </div>
+                    </div>
                 </div>
             </div>
         </div>

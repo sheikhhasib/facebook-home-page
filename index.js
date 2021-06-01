@@ -54,3 +54,14 @@ function seeMoreFunc() {
       Story.style.margin = "10px 0";
     }
   }
+
+  // comment box hide and show 
+  function commentFunc() {
+    var commentSection = document.getElementById("commentSection");
+    
+    if (commentSection.style.display === "none") {
+      commentSection.style.display = "block";
+    }else{
+      commentSection.style.display = "none";
+    }
+  }
