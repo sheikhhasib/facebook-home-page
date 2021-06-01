@@ -21,7 +21,7 @@
   </div>
 
   <div class="col-6 col-s-12">
-    <div class="nav-middle-area">
+    <div class="nav-middle-area" id="headerMiddle">
         <div class="flex-container">
             <button id="header-home" class="header-button"><i class="fas fa-home"></i></button>
             <button id="header-circle" class="header-button"><i class="fas fa-play-circle"></i></button>
@@ -33,14 +33,14 @@
   </div>
 
   <div class="col-3 col-s-12">
-    <div class="right-header">
+    <div class="right-header" id="headerRight">
         <button class="right-header-button-picture">
             <div class="name-picture">
                 <img class="profile-picture" src="https://i.pinimg.com/564x/38/1b/06/381b0623eda223138f89bf2c4b312076.jpg" width="35px" height="35px" alt="">
                 <p style="margin-top: 8px;padding: 0 5px;">Masum</p>
             </div>
         </button>
-        <div class="right-header">
+        <div class="right-header-btn">
             <button class="right-header-button" style="padding: 10px 18px;"><i class="fas fa-ellipsis-v"></i></button>
             <button onclick="mgsFunc()" id="mgsButton" class="right-header-button" style="padding: 10px 12px;"><i class="fab fa-facebook-messenger"></i></button>
             <button class="right-header-button" style="padding: 10px 13px;"><i class="fas fa-bell"></i></button>
@@ -129,26 +129,25 @@
 
   <div class="col-12 col-s-12">
     <div class="main-post-top">
-        
         <div class="main-post">
-            <div class="story">
+            <div class="story" id="Story">
                 <div class="flex-container">
-                    <div class="" style="width: 16%;">
+                    <div class="storyImg" >
                         <img src="https://i.pinimg.com/236x/e2/f5/71/e2f5716626eb948e288769137969126b.jpg" alt="">
                     </div>
-                    <div class="" style="width: 16%;">
+                    <div class="storyImg" >
                         <img src="https://wallpapercave.com/wp/wp2504374.jpg" alt="">
                     </div>
-                    <div class="" style="width: 16%;">
+                    <div class="storyImg" >
                         <img src="https://www.teahub.io/photos/full/57-570952_beautiful-nature-wallpaper-hd-phone-scenery-download-scenery.jpg" alt="">
                     </div>
-                    <div class="" style="width: 16%;">
+                    <div class="storyImg" >
                         <img src="https://cdn.wallpapersafari.com/3/78/uZB1WC.jpg" alt="">
                     </div>
-                    <div class="" style="width: 16%;">
+                    <div class="storyImg img5" >
                         <img src="https://www.desktopbackground.org/download/o/2011/09/06/261618_1080x1920-flower-nature-wallpapers-hd_1080x1920_h.jpg" alt="">
                     </div>
-                    <div class="" style="width: 16%;">
+                    <div class="storyImg img6" >
                         <img  src="https://i.pinimg.com/originals/f5/d9/00/f5d90091dcc0a61a88cb937cbbd94489.jpg" alt="">
                     </div>
                     <!-- <button><span ><i class="fas fa-arrow-right"></i></span></button> -->
@@ -176,7 +175,9 @@
                                 <pre class="post-location">2d  · Dhaka  · </pre>
                              </div>
                         </div>
-                         <button class="right-header-button"><i class="fas fa-ellipsis-v"></i></button>
+                         <div>
+                            <button class="post-card-setting-btn"><i class="fas fa-ellipsis-v"></i></button>
+                         </div>
                      </div>
                     <div class="my-2">
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum quas vel voluptatem nam placeat. Facere mollitia earum aut quidem at?</p>
@@ -215,7 +216,9 @@
                                <pre class="post-location">2d  · Dhaka  · </pre>
                             </div>
                        </div>
-                        <button class="right-header-button"><i class="fas fa-ellipsis-v"></i></button>
+                       <div>
+                        <button class="post-card-setting-btn"><i class="fas fa-ellipsis-v"></i></button>
+                       </div>
                     </div>
                     <div class="my-2">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit at repellendus saepe amet, expedita officiis?</p>
@@ -260,99 +263,100 @@
                 <button class="right-header-button" style="padding: 10px 13px;"><i class="fas fa-search"></i></button>
             </div>
         </div>
-        <div class="right-info">
-            <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.18169-9/21766804_749418048579002_17778767257630667_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=LMb735TGs_wAX-WA0RZ&_nc_ht=scontent.fdac46-1.fna&oh=94d632290a53a6f310e599d40b4bf72d&oe=60D9DEAE" width="35px" height="35px" alt="">
-            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
-            <p class="mt-1 px-1">Masum Ahmed</p>
-        </div>
+        
         <div class="right-info">
             <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-9/186513629_323748049340037_4810255394755612719_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=l10aLU-do6YAX8w-Wh_&_nc_ht=scontent.fdac46-1.fna&oh=b09b935e33f90d36b5dc4abedc645612&oe=60D95E54" width="35px" height="35px" alt="">
-            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <div class="contact-circle"></div>
             <p class="mt-1 px-1">Sheikh Siam</p>
         </div>
         <div class="right-info">
             <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-9/147677436_2948196705460046_3047728649810408228_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=z6oTFEMXhyoAX_DQ_fQ&_nc_oc=AQldtJDPnC1iE_CCFkuZbFOEqXF4Rxhc2I3Jn8RwIm6qsBD4k8Reg8_vZWoqxuVFLXo&_nc_ht=scontent.fdac46-1.fna&oh=3e716d9de7cfc0b74daac6dc2114a50f&oe=60DAD9EC" width="35px" height="35px" alt="">
-            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <div class="contact-circle"></div>
             <p class="mt-1 px-1">Ariful Islam Saikat</p>
         </div>
         <div class="right-info">
             <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-9/171799158_2842104069376582_6850032030931742572_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=-umehi23HmgAX8mK055&_nc_ht=scontent.fdac46-1.fna&oh=9ce83569dbb8a6c256833ed53e2b5784&oe=60D8D351" width="35px" height="35px" alt="">
-            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <div class="contact-circle"></div>
             <p class="mt-1 px-1">Yasir Arafat</p>
         </div>
         <div class="right-info">
             <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-9/152530762_2941701469392271_497510487180784684_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=7GNro06F9WYAX_SRpex&tn=wIbXFXIURWv18-gm&_nc_ht=scontent.fdac46-1.fna&oh=c4a70a6978a6cad2fa76d01e4ed9f2c1&oe=60D83DAC" width="35px" height="35px" alt="">
-            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <div class="contact-circle"></div>
             <p class="mt-1 px-1">Tushar Ahmed</p>
         </div>
         <div class="right-info">
             <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-9/141739504_237683631142900_1373843070330832032_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=4zjzzC9R3UcAX9fgP1r&_nc_oc=AQnVC_29Q0zHABhzxGAqVWpRc_Em1Q6oYFadXHdpnjPhu5HRt1DQX6zYFYjc9CH0-Co&_nc_ht=scontent.fdac46-1.fna&oh=a4aab8578adb5fba58dac7beae744f47&oe=60DAFCAB" width="35px" height="35px" alt="">
-            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <div class="contact-circle"></div>
             <p class="mt-1 px-1">Mohammad Sowrav</p>
         </div>
         <div class="right-info">
             <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-9/185585701_950557892422415_3491587408942910043_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=hGG8cHof4SEAX-qygg9&tn=wIbXFXIURWv18-gm&_nc_ht=scontent.fdac46-1.fna&oh=fe380579f6eee13df4f45f025297a4d5&oe=60DAE2DD" width="35px" height="35px" alt="">
-            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <div class="contact-circle"></div>
             <p class="mt-1 px-1">Asraful Khan</p>
         </div>
         <div class="right-info">
             <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-9/78356053_105266024285740_5890067344566255616_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=CEDoliLnRTcAX-cS95Z&_nc_ht=scontent.fdac46-1.fna&oh=e186c9e6ad595c0abbe8dc3b4ebe4b2f&oe=60D7B209" width="35px" height="35px" alt="">
-            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <div class="contact-circle"></div>
             <p class="mt-1 px-1">Sheikh Saiful</p>
         </div>
         <div class="right-info">
             <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-0/s526x395/186518945_499084621235769_8329867229390600014_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=N3X1HO0ZJhsAX9yelal&_nc_ht=scontent.fdac46-1.fna&tp=7&oh=3a328ebe9f4205112247c5ca85f380cf&oe=60D837DC" width="35px" height="35px" alt="">
-            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <div class="contact-circle"></div>
             <p class="mt-1 px-1">Rakibul Islam Rakib</p>
         </div>
         <div class="right-info">
             <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-9/186452075_4346470735404799_1916745049264941360_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=Zkz9dA06c_cAX8Wwtze&_nc_ht=scontent.fdac46-1.fna&oh=ab9a08c840ec1241b43009f8322797ef&oe=60D953B9" width="35px" height="35px" alt="">
-            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <div class="contact-circle"></div>
             <p class="mt-1 px-1">Md Al Amin Bhuiyan</p>
         </div>
         <div class="right-info">
             <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-9/117313331_2749393925319103_6865770388311760725_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=aeneptxkh1sAX9MdCl1&_nc_ht=scontent.fdac46-1.fna&oh=5310308b1cfc1f1ab5a53a78d622f3f2&oe=60DB0F50" width="35px" height="35px" alt="">
-            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <div class="contact-circle"></div>
             <p class="mt-1 px-1">Md Shohedul Islam Emon</p>
         </div>
         <div class="right-info">
             <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-9/185293718_1217577755365807_1050572696291202034_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=m6xxnlfs-IAAX9cGayK&_nc_ht=scontent.fdac46-1.fna&oh=f4ea566d774a03b2cc4789f55461e036&oe=60D915FB" width="35px" height="35px" alt="">
-            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <div class="contact-circle"></div>
             <p class="mt-1 px-1">Abdus Sami Salim</p>
         </div>
         <div class="right-info">
+            <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.18169-9/21766804_749418048579002_17778767257630667_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=LMb735TGs_wAX-WA0RZ&_nc_ht=scontent.fdac46-1.fna&oh=94d632290a53a6f310e599d40b4bf72d&oe=60D9DEAE" width="35px" height="35px" alt="">
+            <div class="contact-circle"></div>
+            <p class="mt-1 px-1">Masum Ahmed</p>
+        </div>
+        <div class="right-info">
             <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-9/156543290_2870771166502150_2417008649967731189_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=6w4yG8XVdZ0AX9h1ev-&_nc_ht=scontent.fdac46-1.fna&oh=0748f0d40d5fe41c66b6ec9b58f57bb0&oe=60DB172F" width="35px" height="35px" alt="">
-            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <div class="contact-circle"></div>
             <p class="mt-1 px-1">Snigdha Afrin</p>
         </div>
         <div class="right-info">
             <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-9/119984766_3442223072466022_2204726986236711641_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=OtN1RSwl0JkAX_9Pqp3&_nc_ht=scontent.fdac46-1.fna&oh=36e47319fc235934a854776323eae6cd&oe=60DB1B57" width="35px" height="35px" alt="">
-            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <div class="contact-circle"></div>
             <p class="mt-1 px-1">Ismail Hossain</p>
         </div>
         <div class="right-info">
             <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-9/188486962_793184484735552_6784692470492804313_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=sTaRL7JxwZgAX_vgGjN&_nc_ht=scontent.fdac46-1.fna&oh=bf0f96fb4cbcc32cd196c864207f345e&oe=60D7BE89" width="35px" height="35px" alt="">
-            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <div class="contact-circle"></div>
             <p class="mt-1 px-1">S. A. Logno</p>
         </div>
         <div class="right-info">
             <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-9/123138590_116927586860631_5514202733644109710_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=3mgRBohN8LYAX-lA1qC&_nc_ht=scontent.fdac46-1.fna&oh=8b04fe0d6f89e1bc2f03151c2dac2461&oe=60D82B80" width="35px" height="35px" alt="">
-            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <div class="contact-circle"></div>
             <p class="mt-1 px-1">Samadul SK</p>
         </div>
         <div class="right-info">
             <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-9/186558555_1458000724535582_3953511272321739003_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=YqGXVo2kOAsAX9LBzX0&_nc_ht=scontent.fdac46-1.fna&oh=6e2fd525e90e42e6105b18b9efca468a&oe=60DB0EB9" width="35px" height="35px" alt="">
-            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <div class="contact-circle"></div>
             <p class="mt-1 px-1">Md. Ruhul Amin</p>
         </div>
         <div class="right-info">
             <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-9/165381623_288198576025390_3184616926629784638_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=4pH_stE5irIAX8Cm7Df&tn=wIbXFXIURWv18-gm&_nc_ht=scontent.fdac46-1.fna&oh=deb8629eb26d740e5456ef3586f00ff4&oe=60D900C4" width="35px" height="35px" alt="">
-            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <div class="contact-circle"></div>
             <p class="mt-1 px-1">Habib Rahaman</p>
         </div>
         <div class="right-info">
             <img class="profile-picture" src="https://scontent.fdac46-1.fna.fbcdn.net/v/t1.6435-9/91762291_879033345851876_6540076259307683840_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=2LI08cyUYSUAX9kSKmK&_nc_ht=scontent.fdac46-1.fna&oh=016fb585eac17558fcb6372bd2e2f3db&oe=60D92FC7" width="35px" height="35px" alt="">
-            <div style="border: 3px solid rgb(21, 255, 0); height: 3px;border-radius: 50%;margin-top: 30px;"></div>
+            <div class="contact-circle"></div>
             <p class="mt-1 px-1">Masum Ali</p>
         </div>
     </div>
