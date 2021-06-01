@@ -26,3 +26,18 @@ function seeMoreFunc() {
     }
     
   }
+
+
+  function facebookInfoFunc() {
+    var facebookInfo = document.getElementById("facebookInfo");
+    var infoButton = document.getElementById("infoButton");
+    
+    if (facebookInfo.style.display === "none") {
+      facebookInfo.style.display = "block";
+      facebookInfo.style.position = "relative";
+      facebookInfo.style.marginTop = "0";
+    }else{
+      facebookInfo.style.display = "none"
+    }
+    
+  }

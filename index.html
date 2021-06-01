@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+        <link rel="icon" href="facebook.png" type="image/gif" sizes="16x16">
         <script src="index.js"></script>
 </head>
 <body>
@@ -15,6 +16,7 @@
     <div class="flex-container">
         <img src="facebook.png" width="50px" alt="">
         <input type="text" id="search" class="search-input" placeholder="search facebook">
+        <button onclick="facebookInfoFunc()" id="infoButton" class="navbar-btn"><i class="fas fa-bars"></i></button>
     </div>
   </div>
 
@@ -50,7 +52,7 @@
 <!-- header section finish -->
 <!-- body section start  -->
 <div class="row main">
-  <div class="col-3 col-s-12 main-body-left">
+  <div class="col-3 col-s-12 main-body-left" id="facebookInfo">
     <div class="facebook-info" >
         <div class="left-info">
             <img class="profile-picture" src="https://i.pinimg.com/564x/38/1b/06/381b0623eda223138f89bf2c4b312076.jpg" width="35px" height="35px" alt="">
@@ -117,17 +119,41 @@
             <i class="fas fa-chevron-down "></i></span>
             See more
         </div>
-        <!-- <div class="footer">
+        <div class="footer">
             <p>Privacy  · Terms  · Advertising  · Ad choices   · Cookies  ·</p>
             <span>More · Facebook © 2021</span>
-        </div> -->
+        </div>
         
     </div>
   </div>
 
   <div class="col-12 col-s-12">
     <div class="main-post-top">
+        
         <div class="main-post">
+            <div class="story">
+                <div class="flex-container">
+                    <div class="" style="width: 16%;">
+                        <img src="https://i.pinimg.com/236x/e2/f5/71/e2f5716626eb948e288769137969126b.jpg" alt="">
+                    </div>
+                    <div class="" style="width: 16%;">
+                        <img src="https://wallpapercave.com/wp/wp2504374.jpg" alt="">
+                    </div>
+                    <div class="" style="width: 16%;">
+                        <img src="https://www.teahub.io/photos/full/57-570952_beautiful-nature-wallpaper-hd-phone-scenery-download-scenery.jpg" alt="">
+                    </div>
+                    <div class="" style="width: 16%;">
+                        <img src="https://cdn.wallpapersafari.com/3/78/uZB1WC.jpg" alt="">
+                    </div>
+                    <div class="" style="width: 16%;">
+                        <img src="https://www.desktopbackground.org/download/o/2011/09/06/261618_1080x1920-flower-nature-wallpapers-hd_1080x1920_h.jpg" alt="">
+                    </div>
+                    <div class="" style="width: 16%;">
+                        <img  src="https://i.pinimg.com/originals/f5/d9/00/f5d90091dcc0a61a88cb937cbbd94489.jpg" alt="">
+                    </div>
+                    <!-- <button><span ><i class="fas fa-arrow-right"></i></span></button> -->
+                </div>
+            </div>
             <div class="card live-card">
                 <div class="flex-container" >
                     <img class="profile-picture" src="https://i.pinimg.com/564x/38/1b/06/381b0623eda223138f89bf2c4b312076.jpg" width="35px" height="35px" alt="">
@@ -136,7 +162,7 @@
                 <div style="border-top: 1px solid #484b4e; margin-top: 10px;"></div>
                 <div class="flex-container">
                     <button class="post-button"><i style="color: #a80823;" class="fad fa-video-plus"></i> <span class="live-video-text">Live video</span></button>
-                    <button class="post-button"><i style="color: #45bd62;" class="fas fa-photo-video"></i> <span class="live-video-text">Photo/Video</span></button>
+                    <button class="post-button"><i style="color: #45bd62;" class="fas fa-photo-video"></i> <span class="live-video-text">Photo</span></button>
                     <button class="post-button"><i style="color: #f7b92b;" class="fas fa-laugh"></i> <span class="live-video-text">Activity</span></button>
                 </div>
             </div>
@@ -145,13 +171,13 @@
                     <div class="flex-container "  style="justify-content: space-between;">
                         <div class="flex-container">
                              <img class="profile-picture" src="https://i.pinimg.com/564x/38/1b/06/381b0623eda223138f89bf2c4b312076.jpg" width="45px" height="45px" alt="">
-                             <p class="mx-1">Siam Ahmed <span style="color: #7f8081;"> is <i style="color: #f7b92b;" class="far fa-grin-alt"></i> feeling happy at Mouban 81.N.S Road Dhaka</span></p>
+                             <div>
+                                <p class="mx-1">Siam Ahmed <span style="color: #7f8081;"> is <i style="color: #f7b92b;" class="far fa-grin-alt"></i> feeling happy at Mouban 81.N.S Road Dhaka</span></p>
+                                <pre class="post-location">2d  · Dhaka  · </pre>
+                             </div>
                         </div>
-                         <button class="right-header-button" style="padding: 10px 18px;"><i class="fas fa-ellipsis-v"></i></button>
+                         <button class="right-header-button"><i class="fas fa-ellipsis-v"></i></button>
                      </div>
-                    <div >
-                        <pre>2d  · Dhaka  · </pre>
-                    </div>
                     <div class="my-2">
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum quas vel voluptatem nam placeat. Facere mollitia earum aut quidem at?</p>
                     </div>
@@ -170,7 +196,7 @@
                         </p>
                     </div>
                     <div class="under-line"></div>
-                    <div >
+                    <div class="flex-container">
                         <button class="post-button"><span  style="color: #6c63ff;"><i class="fas fa-thumbs-up"></i></span> Like</button>
                         <button class="post-button"><i class="fas fa-comment-alt"></i> Comments</button>
                         <button class="post-button"><i class="fas fa-share"></i> Share</button>
@@ -182,14 +208,14 @@
             <div class="mt-2">
                 <div class="card post-card">
                     <div class="flex-container "  style="justify-content: space-between;">
-                       <div class="flex-container">
+                        <div class="flex-container">
                             <img class="profile-picture" src="https://i.pinimg.com/564x/38/1b/06/381b0623eda223138f89bf2c4b312076.jpg" width="45px" height="45px" alt="">
-                            <p class="mx-1">Siam Ahmed <span style="color: #7f8081;"> is <i style="color: #f7b92b;" class="far fa-grin-alt"></i> feeling happy at Mouban 81.N.S Road Dhaka</span></p>
+                            <div>
+                               <p class="mx-1">Siam Ahmed <span style="color: #7f8081;"> is <i style="color: #f7b92b;" class="far fa-grin-alt"></i> feeling happy at Mouban 81.N.S Road Dhaka</span></p>
+                               <pre class="post-location">2d  · Dhaka  · </pre>
+                            </div>
                        </div>
-                        <button class="right-header-button" style="padding: 10px 18px;"><i class="fas fa-ellipsis-v"></i></button>
-                    </div>
-                    <div>
-                        <pre>2d  · Dhaka  · </pre>
+                        <button class="right-header-button"><i class="fas fa-ellipsis-v"></i></button>
                     </div>
                     <div class="my-2">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit at repellendus saepe amet, expedita officiis?</p>
@@ -209,7 +235,7 @@
                         </p>
                     </div>
                     <div class="under-line"></div>
-                    <div >
+                    <div class="flex-container">
                         <button class="post-button"><span  style="color: #6c63ff;"><i class="fas fa-thumbs-up"></i></span> Like</button>
                         <button class="post-button"><i class="fas fa-comment-alt"></i> Comments</button>
                         <button class="post-button"><i class="fas fa-share"></i> Share</button>
